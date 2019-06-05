@@ -4,7 +4,7 @@ import argparse
 
 
 def find_max_profit(prices):
-    max_value = -10000
+    max_value = float('-inf')
     for i in range(0, len(prices)):
         for j in range(i+1, len(prices)-1):
             if prices[j] - prices[i] > max_value:
